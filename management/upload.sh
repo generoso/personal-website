@@ -19,14 +19,24 @@ REMOTE=pagano@intra-id:/www-id/Pages_Perso_Mescal/generoso.pagano
 CONTENT_DIR="project"
 LAST_SHA1_FILE="management/LASTSHA"
 
+function rebase() {
+  NEW_SHA1=`git rev-parse HEAD`
+  echo "Rebasing the last sha1 to current HEAD ("$NEW_SHA1")"
+  echo $NEW_SHA1 > $LAST_SHA1_FILE
+}
+
 # Body
 
 LAST_SHA1=`cat ${LAST_SHA1_FILE}`
 if [ $? != 0 ] ; then
   echo "Warning: ${LAST_SHA1_FILE} file not found."
-  NEW_SHA1=`git rev-parse HEAD`
-  echo $NEW_SHA1 > $LAST_SHA1_FILE
+  rebase
   echo "Automatically created with current HEAD as last uploaded commit."
+  exit
+fi
+
+if [ $# -gt 0 ] && [ $1 == "--rebase" ]; then
+  rebase
   exit
 fi
 
@@ -38,6 +48,8 @@ if [ -z "$FILES" ]; then
   echo "No file to upload"
   exit
 fi
+
+echo "Files to upload: " $FILES
 
 scp $FILES $REMOTE
 
