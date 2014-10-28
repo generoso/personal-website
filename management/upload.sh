@@ -66,7 +66,7 @@ function main() {
 	return
     fi
     echo "Files to upload: " $FILES
-    if [ $DRY -eq 1 ]; then
+    if [ $DRY -eq 0 ]; then
 	scp $FILES $REMOTE
 	if [ $? == 0 ] ; then
 	    echo "Files successfully uploaded to $REMOTE"
