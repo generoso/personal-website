@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 ##########################################################################
 # Upload to the remote server all the website files that have been changed
@@ -60,7 +60,8 @@ function main() {
 
     # normal operations: last sha1 found
     echo "Uploading all files changed from commit $LAST_SHA1"
-    FILES=`git diff --diff-filter=ACMRTUXB --name-only HEAD ${LAST_SHA1} | grep -v .settings | grep -v .project | grep ${PROJECT_DIR}`
+    FILES=`git diff --diff-filter=ACMRTUXB --name-only HEAD ${LAST_SHA1} | grep -v .settings | grep -v .project | grep project`
+    echo $FILES
     if [ -z "$FILES" ]; then
 	echo "No file to upload"
 	return

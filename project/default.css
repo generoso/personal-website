@@ -5,11 +5,12 @@ Released for free under the Creative Commons Attribution License
 body {
 	margin: 0;
 	padding: 0;
-	background: #897C77; /*#6769AE; light blue*/ /*#3B3DC2; blue */ /*#51096E; violet */
+	background: #897C77;
 	text-align: justify;
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #404040;
+	text-align: justify;
 	text-align: justify;
 	text-align: justify;
 }
@@ -141,17 +142,22 @@ img.right {
 	background: #F4F4F4;
 }
 
+#cleardiv {
+	clear: both;
+}
+
 #content {
 	width: 950px;
 	margin: 0 auto;
 }
 
 #left-column {
-	float: left;
+	clear: both; float : left;
 	width: 570px;
 	padding: 0px 20px 50px 20px;
 	line-height: 25px;
 	font-size: 14px;
+	float: left;
 }
 
 #main {
@@ -211,21 +217,15 @@ img.right {
 	margin-right: 15px;
 }
 
-/* Sidebar */
-#sidebar {
-	clear: both;
-	background: #020044;
-	color: #181818;
-	padding: 10px 0 0 0;
-}
-
 /* Footer */
 #footer {
-	height: 50px;
+	clear: both; height : 50px;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	font-size: 11px;
 	color: #CCCCCC;
+	height: 50px;
+	height: 50px;
 }
 
 #footer p {
