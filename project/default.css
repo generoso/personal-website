@@ -68,7 +68,7 @@ img.right {
 /* Header */
 #topbar {
 	height: 10px;
-	background: #020044;
+	background: #23233a;
 }
 
 #header {
@@ -132,7 +132,7 @@ img.right {
 
 #menu .current_page_item a {
 	font-weight: bold;
-	color: #020044;
+	color: #23233a;
 }
 
 /* Page */
@@ -250,11 +250,11 @@ img.right {
 }
 
 #mapdiv {
-	align: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
 	margin-bottom: 20px;
+	padding-left: 60px;
 }
 
 .fotorama {
