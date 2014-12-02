@@ -113,7 +113,7 @@ img.right {
 }
 
 #menu a {
-        letter-spacing: normal;
+	letter-spacing: normal;
 	display: block;
 	float: left;
 	padding: 70px 20px 0 20px;
@@ -152,7 +152,8 @@ img.right {
 }
 
 #left-column {
-	clear: both; float : left;
+	clear: both;
+	float: left;
 	width: 620px;
 	padding: 0px 20px 50px 20px;
 	line-height: 25px;
@@ -171,6 +172,7 @@ img.right {
 	width: 250px;
 	line-height: 25px;
 	font-size: 12px;
+	margin-right: 15px;
 }
 
 .post {
@@ -218,7 +220,8 @@ img.right {
 
 /* Footer */
 #footer {
-	clear: both; height : 50px;
+	clear: both;
+	height: 50px;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	font-size: 11px;
