@@ -10,14 +10,16 @@
 	content="generoso, pagano, sowftware, engineer, research, inria, travel, music, grenoble, lig, trace, open source, framesoc, ocelotl, eclipse, lttng, homepage, webpage" />
 <meta name="author" content="Generoso Pagano" />
 <link href="default.css" rel="stylesheet" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<!-- Analytics -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css'>
+	<!-- Analytics -->
 <script src="./js/analytics.js"></script>
 </head>
 
 <body>
 
 	<!-- start header -->
+	<div id="topbar"></div>
 	<div id="header">
 		<div id="logo">
 			<h1>
@@ -37,23 +39,19 @@
 	</div>
 	<!-- end header -->
 
-	<div id="headerbg"></div>
-
 	<!-- start page -->
 	<div id="page">
 		<!-- start content -->
 		<div id="content">
-			<!-- start latest-post -->
-			<div id="latest-post" class="post">
+			<!-- start left-column -->
+			<div id="left-column" class="post">
 				<h1 class="title">Welcome to my website!</h1>
 
-				
-			
-				<p>
-					My name is Generoso Pagano and I am a software engineer, a
-					guitarist and a world traveler.
-				</p>
+				<p>My name is Generoso Pagano and I am a software engineer, a
+					guitarist and a world traveler.</p>
+
 				<h2>Something I am doing now...</h2>
+
 				<p>
 					I am currently working as R&ampD engineer at <a
 						href="http://www.inria.fr/en/centre/grenoble">Inria</a>, a French
@@ -68,12 +66,13 @@
 
 				<p>
 					I am an open source enthusiast and I collaborate with some open
-					source projects (<a href="https://github.com/generoso/framesoc">Framesoc</a>, 
+					source projects (<a href="https://github.com/generoso/framesoc">Framesoc</a>,
 					<a href="http://www.eclipse.org/linuxtools/projectPages/lttng/">Lttng</a>,
 					<a href="https://github.com/dosimont/ocelotl">Ocelotl</a>).
 				</p>
 
 				<h2>Something I've done before...</h2>
+
 				<p>
 					I previously worked in Italy, my native country, at <a
 						href="http://www.evidence.eu.com/">Evidence</a>, a young and
@@ -93,25 +92,35 @@
 						Italia</a>.
 				</p>
 
-
 			</div>
-			<!-- end latest-post -->
-	<div id="recent-posts">
-					<img src="./images/generoso.png" align="right"/>
-</div>
+			<!-- end left-column -->
+
+			<!-- start right-column -->
+			<div id="right-column">
+				<img src="./images/generoso.png" align="right" />
+			</div>
+			<!-- end right-column -->
 
 		</div>
 		<!-- end content -->
+
 		<!-- start sidebar -->
 		<div id="sidebar"></div>
 		<!-- end sidebar -->
+
 	</div>
 	<!-- end page -->
+
+	<!-- start footer -->
 	<div id="footer">
-		<p id="legal">
-			&copy;2014 Generoso Pagano. All Rights Reserved. Template design by <a
-				href="http://templated.co" rel="nofollow">TEMPLATED</a>
-		</p>
+		<div id="legaldiv">
+			<p id="legal">
+				&copy;2014 Generoso Pagano. All Rights Reserved. Template inspired
+				by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>
+			</p>
+		</div>
 	</div>
+	<!-- end footer -->
+
 </body>
 </html>

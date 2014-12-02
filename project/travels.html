@@ -11,14 +11,16 @@
 <link href="default.css" rel="stylesheet" type="text/css" />
 <!-- Map -->
 <link href="./js/ammap/ammap.css" rel="stylesheet" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<!-- Analytics -->
-<script src="./js/analytics.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css'>
+	<!-- Analytics -->
+	<script src="./js/analytics.js"></script>
 </head>
 
 <body>
 
 	<!-- start header -->
+	<div id="topbar"></div>
 	<div id="header">
 		<div id="logo">
 			<h1>
@@ -38,24 +40,22 @@
 	</div>
 	<!-- end header -->
 
-	<div id="headerblank"></div>
-
 	<!-- start page -->
 	<div id="page">
 		<!-- start content -->
 		<div id="content">
-			<!-- start latest-post -->
+			<!-- start left-column -->
 			<div id="main" class="post">
 				<h2 class="title">Countries I visited so far...</h2>
 
 				<script src="./js/ammap/ammap.js" type="text/javascript"></script>
 				<script src="./js/ammap/maps/js/worldHigh.js" type="text/javascript"></script>
 				<script src="./js/ammap/themes/light.js" type="text/javascript"></script>
-				<div id="mapdiv" style="width = 850px; height: 450px;"></div>
+				<div id="mapdiv" style="height: 450px;"></div>
 				​
 				<script type="text/javascript">
 					var map;
-					
+
 					AmCharts.ready(function() {
 						map = new AmCharts.AmMap(AmCharts.themes.light);
 						map.pathToImages = "./js/ammap/images/";
@@ -135,13 +135,13 @@
 							rollOverColor : "#88CAE7", // over not visited
 							rollOverOutlineColor : "#FFFFFF"
 						};
-						
+
 						map.write("mapdiv");
 					});
 				</script>
 
 			</div>
-			<!-- end latest-post -->
+			<!-- end left-column -->
 		</div>
 		<!-- end content -->
 		<!-- start sidebar -->
@@ -150,10 +150,12 @@
 	</div>
 	<!-- end page -->
 	<div id="footer">
-		<p id="legal">
-			&copy;2014 Generoso Pagano. All Rights Reserved. Template design by <a
-				href="http://templated.co" rel="nofollow">TEMPLATED</a>
-		</p>
+		<div id="legaldiv">
+			<p id="legal">
+				&copy;2014 Generoso Pagano. All Rights Reserved. Template inspired
+				by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>
+			</p>
+		</div>
 	</div>
 </body>
 </html>
