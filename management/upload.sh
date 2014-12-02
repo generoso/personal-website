@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 ##########################################################################
 # Upload to the remote server all the website files that have been changed

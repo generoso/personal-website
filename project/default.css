@@ -99,7 +99,7 @@ img.right {
 
 /* Menu */
 #menu {
-	margin-left: 320px;
+	margin-left: 310px;
 }
 
 #menu ul {
@@ -113,6 +113,7 @@ img.right {
 }
 
 #menu a {
+        letter-spacing: normal;
 	display: block;
 	float: left;
 	padding: 70px 20px 0 20px;
@@ -126,12 +127,11 @@ img.right {
 }
 
 #menu a:hover {
-	color: #030077;
+	color: #300044;
 }
 
 #menu .current_page_item a {
 	font-weight: bold;
-	font-size: 16px;
 	color: #020044;
 }
 
