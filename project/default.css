@@ -5,7 +5,7 @@ Released for free under the Creative Commons Attribution License
 body {
 	margin: 0;
 	padding: 0;
-	background: #3B3DC2; /*#51096E; violet */
+	background: #897C77; /*#6769AE; light blue*/ /*#3B3DC2; blue */ /*#51096E; violet */
 	text-align: justify;
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	font-size: 12px;
@@ -251,6 +251,7 @@ img.right {
 }
 
 #mapdiv {
+	align: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
